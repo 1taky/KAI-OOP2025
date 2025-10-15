@@ -1,0 +1,9 @@
+﻿Student VitaliySyniak
+{
+"firstname": "Vitaliy",
+"lastname": "Syniak",
+"course": "3",
+"studentID": "KB123321",
+"gender": "Male",
+"homeplace": "11-808"
+};
