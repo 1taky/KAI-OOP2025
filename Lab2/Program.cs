@@ -8,19 +8,19 @@ class Program
     static void Main()
     {
         MyString[] array = {
-        new MyString("apple"),
-        new MyString("banana"),
-        new MyString("kiwi")
+            new MyString("apple"),
+            new MyString("banana"),
+            new MyString("kiwi")
         };
 
         Console.WriteLine("Масив:");
         foreach (MyString s in array)
-        Console.WriteLine(s);
+            Console.WriteLine(s);
 
         ArrayList list = new ArrayList()
         {
-        new MyString("dog"),
-        new MyString("cat")
+            new MyString("dog"),
+            new MyString("cat")
         };
         list.Add(new MyString("mouse"));
         list.RemoveAt(1);
@@ -30,18 +30,19 @@ class Program
 
         List<MyString> genericList = new List<MyString>
         {
-        new MyString("book"),
-        new MyString("notebook"),
-        new MyString("pen")
+            new MyString("book"),
+            new MyString("notebook"),
+            new MyString("pen")
         };
 
         genericList.Add(new MyString("pencil"));
         genericList.RemoveAt(0);
         genericList[1].ReplaceSubstring("pen", "marker");
+        
             
         Console.WriteLine("\nList<MyString>:");
         foreach (MyString s in genericList)
-        Console.WriteLine(s);
+            Console.WriteLine(s);
 
         MyString? found = genericList.FirstOrDefault(s => s.ContainsSubstring("mark"));
         Console.WriteLine($"\nЗнайдено: {found}");
