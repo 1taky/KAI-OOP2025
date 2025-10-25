@@ -8,7 +8,7 @@ public static class StringOperations
     {
         int count = 0;
         foreach (char c in str)
-            if (!char.IsWhiteSpace(c)) count++;
+            if (char.IsLower(c)) count++;
         return count;
     };
 
@@ -16,7 +16,7 @@ public static class StringOperations
     {
         int count = 0;
         foreach (char c in str)
-            if (!char.IsWhiteSpace(c)) count++;
+            if (char.IsLower(c)) count++;
         return count;
     };
 }
