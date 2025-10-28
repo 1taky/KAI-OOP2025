@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfStringEntity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <StringEntity>
+    <Value>Hello</Value>
+  </StringEntity>
+  <StringEntity>
+    <Value>World</Value>
+  </StringEntity>
+  <StringEntity>
+    <Value>Serialization</Value>
+  </StringEntity>
+  <StringEntity>
+    <Value>Testing</Value>
+  </StringEntity>
+  <StringEntity>
+    <Value>Moment</Value>
+  </StringEntity>
+</ArrayOfStringEntity>

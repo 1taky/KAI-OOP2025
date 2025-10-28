@@ -1,0 +1,22 @@
+[
+  {
+    "Value": "Hello",
+    "Length": 5
+  },
+  {
+    "Value": "World",
+    "Length": 5
+  },
+  {
+    "Value": "Serialization",
+    "Length": 13
+  },
+  {
+    "Value": "Testing",
+    "Length": 7
+  },
+  {
+    "Value": "Moment",
+    "Length": 6
+  }
+]
