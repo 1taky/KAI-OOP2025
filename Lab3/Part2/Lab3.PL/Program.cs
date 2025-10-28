@@ -1,8 +1,10 @@
-﻿namespace Lab3.PL;
+﻿using Lab3.PL;
 
-class Program
+namespace Lab3;
+
+public class Program
 {
-    static void Main()
+    public static void Main(string[] args)
     {
         Menu.MainMenu();
     }

@@ -6,7 +6,7 @@
     <Course>3</Course>
     <StudentId>KB123321</StudentId>
     <Gender>Male</Gender>
-    <Address>asdsad</Address>
-    <Hostel>3-400</Hostel>
+    <Address>asd</Address>
+    <Hostel>3-1232</Hostel>
   </Student>
 </ArrayOfStudent>

@@ -1,12 +1,11 @@
 [
   {
-    "LastName": "Syniak",
-    "FirstName": "Vitaliy",
+    "LastName": "vit",
+    "FirstName": "sd",
     "Course": 3,
-    "StudentId": "KB123456",
+    "StudentId": "KB123321",
     "Gender": 0,
-    "Address": "asdads",
-    "Hostel": "3-412",
-    "LivesInHostel": true
+    "Address": "asd",
+    "Hostel": "3-1231"
   }
 ]

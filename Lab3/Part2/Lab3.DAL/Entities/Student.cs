@@ -1,12 +1,9 @@
 using MemoryPack;
-using System.Xml.Serialization;
 
 namespace Lab3.DAL;
 
-public enum Gender { Male, Female }
-
 [MemoryPackable]
-public partial class Student
+public partial class Student : IExtraSkill
 {
     public string LastName { get; set; }
     public string FirstName { get; set; }
@@ -16,11 +13,20 @@ public partial class Student
     public string Address { get; set; }
     public string? Hostel { get; set; }
 
-    // [XmlIgnore]
-    public bool LivesInHostel => !string.IsNullOrWhiteSpace(Hostel);
+    public bool IsInHostel()
+    {
+        return !string.IsNullOrWhiteSpace(Hostel) && Hostel.Contains('-');
+    }
 
     public Student() { }
 
     public override string ToString()
-        => $"{LastName} {FirstName} | {Course} курс | {StudentId} | {Gender} | {Hostel ?? "Без гуртожитка"}";
+    {
+        return $"{LastName} {FirstName} | {Course} курс | {StudentId} | {Gender} | {Hostel ?? "Без гуртожитку"}";
+    }
+
+    public void SleepStanding()
+    {
+        Console.WriteLine($"Student {FirstName} {LastName} is sleeping standing after studying");
+    }
 }
