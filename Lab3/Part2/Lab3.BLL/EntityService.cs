@@ -15,7 +15,7 @@ public class EntityService
     {
         if (string.IsNullOrWhiteSpace(s.FirstName) || string.IsNullOrWhiteSpace(s.LastName))
         {
-            throw new InvalidStudentDataException("Ім'я або прізвище не можуть бути порожніми!");
+            throw new InvalidStudentDataException("First name or last name could not be empty!");
         }
 
         List<Student> all = _context.Load();
@@ -23,7 +23,7 @@ public class EntityService
         {
             if (st.StudentId == s.StudentId)
             {
-                throw new InvalidStudentDataException("Студент з таким ID вже існує!");
+                throw new InvalidStudentDataException("Student with this ID already exist!");
             }
         }
 
@@ -48,7 +48,7 @@ public class EntityService
 
         if (!found)
         {
-            throw new StudentNotFoundException($"Студента з ID {id} не знайдено!");
+            throw new StudentNotFoundException($"Student with ID {id} not found!");
         }
 
         _context.Save(all);

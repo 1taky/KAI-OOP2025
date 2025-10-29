@@ -1,4 +1,5 @@
 using System.Text;
+using System.Text.Json.Serialization;
 
 namespace Lab3.DAL;
 
@@ -16,7 +17,7 @@ public class CustomProvider<T> : IDataProvider<T>
             writer.WriteLine(item?.ToString());
         }
 
-        Console.WriteLine($"✅ Custom text file saved to {path}");
+        Console.WriteLine($"Custom text file saved to {path}");
     }
 
     public List<T> Load(string fileName)
@@ -26,7 +27,7 @@ public class CustomProvider<T> : IDataProvider<T>
 
         if (!File.Exists(path))
         {
-            Console.WriteLine($"⚠️ File not found: {path}");
+            Console.WriteLine($"File not found: {path}");
             return result;
         }
 
